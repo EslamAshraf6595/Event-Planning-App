@@ -126,29 +126,35 @@ class _ProfileTabState extends State<ProfileTab> {
         SizedBox(
           height: height * 0.01,
         ),
-        Container(
-          //theme
-          margin: EdgeInsets.symmetric(horizontal: width * 0.04),
-          width: width,
-          height: height * 0.06,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: AppColor.primeColordark, width: 2)),
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: width * 0.03),
-            child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    AppLocalizations.of(context)!.light,
-                    style: Theme.of(context).textTheme.headlineLarge,
-                  ),
-                  Icon(
-                    Icons.arrow_drop_down,
-                    size: 30,
-                    color: Theme.of(context).primaryColor,
-                  )
-                ]),
+        InkWell(
+          onTap: () {
+            // showThemeBottomSheet();
+            // setState(() {});
+          },
+          child: Container(
+            //theme
+            margin: EdgeInsets.symmetric(horizontal: width * 0.04),
+            width: width,
+            height: height * 0.06,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(color: AppColor.primeColordark, width: 2)),
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: width * 0.03),
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      AppLocalizations.of(context)!.light,
+                      style: Theme.of(context).textTheme.headlineLarge,
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down,
+                      size: 30,
+                      color: AppColor.primeColordark,
+                    )
+                  ]),
+            ),
           ),
         )
       ]),
@@ -159,4 +165,9 @@ class _ProfileTabState extends State<ProfileTab> {
     showModalBottomSheet(
         context: context, builder: (context) => LanguageButtomShet());
   }
+
+  // void showThemeBottomSheet() {
+  //   showModalBottomSheet(
+  //       context: context, builder: (context) => ThemeButtomShet());
+  // }
 }
