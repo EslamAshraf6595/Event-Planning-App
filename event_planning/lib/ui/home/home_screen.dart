@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import 'tabs/profile/profile_tab.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,11 +8,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
-        appBar: AppBar(
-      title: Text(AppLocalizations.of(context)!.english),
-      leading: Icon(Icons.arrow_back),
-    ));
+      body: ProfileTab(),
+    );
   }
 }

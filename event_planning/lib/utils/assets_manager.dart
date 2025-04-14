@@ -11,4 +11,5 @@ class AppAssets {
   static const String onbordingdark4 = "assets/images/onboarding dark 4.png";
   static  String englishFlag = "assets/images/en.png";
   static  String arabicFlag = "assets/images/ar.png";
+  static  String profileImage = "assets/images/profileImage.png";
 }

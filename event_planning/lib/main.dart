@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      initialRoute: IntroControle.routIntro,
+      initialRoute: HomeScreen.routHome,
       routes: {
         IntroControle.routIntro: (context) => IntroControle(),
         HomeScreen.routHome: (context) => HomeScreen(),

@@ -71,7 +71,7 @@ class _Page1State extends State<Page1> {
             child: Text(AppLocalizations.of(context)!.start),
             style: ElevatedButton.styleFrom(
                 fixedSize: Size(width, height * 0.06),
-                backgroundColor: AppColor.primeColor,
+                backgroundColor: Theme.of(context).primaryColor,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16))),
           )
